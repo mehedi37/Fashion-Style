@@ -1,0 +1,32 @@
+﻿@model Fashion___Style.Models.FashionModel
+
+@{
+    ViewData["Title"] = "Add Fashion";
+}
+<h1>Add New Fashion</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label>Fashion Name</label>
+        <input asp-for="ClothName" class="form-control" />
+        <span asp-validation-for="ClothName" class="text-danger"></span>
+    </div>
+    <div class="form-group
+    ">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Category"></label>
+        <input asp-for="Category" class="form-control" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Picture"></label>
+        <input asp-for="Picture" class="form-control" />
+        <span asp-validation-for="Picture" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Add</button>
+
+</form>
